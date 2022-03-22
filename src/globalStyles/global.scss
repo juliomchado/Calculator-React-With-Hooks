@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #212121;
+
+    --text-color: #FFFF;
+    --text-color-top-buttons: #212121;
+    --functions-rigth-buttons-color: #FF862C;
+    --functions-top-buttons-color: #C4C4C4;
+    --display-background: #2F2F2F;
+
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1.6rem "Roboto", monospace;
+    color: var(--text-color);
+}
+
+button {
+    cursor: pointer;
+    outline: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

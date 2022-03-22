@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 32px 32px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        "button_zero button_zero . .";
+    width: 416px;
+    height: 530px;
+
+
+    button {
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+        border: transparent;
+
+        color: var(--text-color-top-buttons);
+
+        font-size: 3.2rem;
+        font-weight: 400;
+
+        color: var(--text-color);
+        background-color: var(--display-background);
+    }
+
+    .function_right {
+        background-color: var(--functions-rigth-buttons-color);
+        color: var(--text-color);
+    }
+    
+    .function_top {
+        background-color: var(--functions-top-buttons-color);
+        color: var(--text-color-top-buttons);
+    }
+
+    .button_zero {
+        width: 100%;
+        grid-area: button_zero;
+        border-radius: 80px;
+    }
+}
